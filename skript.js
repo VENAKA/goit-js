@@ -92,3 +92,8 @@ function getEyeColor(user, color){
     return  user.filter(eye => eye.eyeColor === color)
 }
 console.log(getEyeColor(chuVaki, 'blue'))
+
+function getGender(user, gender){
+    return user.filter(gen => gen.gender === gender)
+}
+console.log(getGender(chuVaki, 'female'))
