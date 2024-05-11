@@ -101,3 +101,7 @@ function getOnline(user, online){
     return user.filter(on => on.isActive === online)
 }
 console.log(getOnline(chuVaki, false))
+function getE_male(user, e_male){
+    return user.find(em => em.email === e_male)
+}
+console.log(getE_male(chuVaki,'shereeanthony@kog.com'))
