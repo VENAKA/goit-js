@@ -97,3 +97,7 @@ function getGender(user, gender){
     return user.filter(gen => gen.gender === gender)
 }
 console.log(getGender(chuVaki, 'female'))
+function getOnline(user, online){
+    return user.filter(on => on.isActive === online)
+}
+console.log(getOnline(chuVaki, false))
