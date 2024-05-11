@@ -94,14 +94,27 @@ function getEyeColor(user, color){
 console.log(getEyeColor(chuVaki, 'blue'))
 
 function getGender(user, gender){
-    return user.filter(gen => gen.gender === gender)
+    return user.filter(gen => gen.gender === gender).map(nam => nam.name)
 }
 console.log(getGender(chuVaki, 'female'))
+
 function getOnline(user, online){
     return user.filter(on => on.isActive === online)
 }
 console.log(getOnline(chuVaki, false))
+
 function getE_male(user, e_male){
     return user.find(em => em.email === e_male)
 }
 console.log(getE_male(chuVaki,'shereeanthony@kog.com'))
+
+function sortByAge(user, min, max){
+    return user.filter(years => years.age > min && years.age < max)
+}
+console.log(sortByAge(chuVaki, 25, 40))
+
+let sum = 0
+chuVaki.forEach(user => {
+    totalBalance += user.balance
+})
+console.log(totalBalance)
