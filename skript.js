@@ -115,6 +115,6 @@ console.log(sortByAge(chuVaki, 25, 40))
 
 let sum = 0
 chuVaki.forEach(user => {
-    totalBalance += user.balance
+    sum += user.balance
 })
-console.log(totalBalance)
+console.log(sum)
