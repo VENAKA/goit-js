@@ -87,3 +87,8 @@ let chuVaki = [
 
 let ludi =  chuVaki.map(ludi => ludi.name)
 console.log(ludi)
+
+function getEyeColor(user, color){  
+    return  user.filter(eye => eye.eyeColor === color)
+}
+console.log(getEyeColor(chuVaki, 'blue'))
