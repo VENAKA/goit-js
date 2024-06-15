@@ -1,4 +1,4 @@
-let chuVaki = [
+/* let chuVaki = [
     {
     id: '701b29c3-b35d-4cf1-a5f6-8b12b29a5081',
     name: 'Moore Hensley',
@@ -120,7 +120,7 @@ chuVaki.forEach(user => {
 console.log(sum)
 
 function getByFriend(user , friendo){
-    return user.filter( fr => fr.friends === friendo)
+    return user.filter( fr => fr.friends === friendo).map(val => val.name)
 }
 
 console.log(chuVaki, 'Briana Decker')
@@ -128,7 +128,7 @@ console.log(chuVaki, 'Briana Decker')
 let sortName = chuVaki
 .sort((a,b) => (b.friends).length - (a.friends).length)
 .map(val => val.name)
-console.log(sortName)
+console.log(sortName) */
 
 
 
@@ -177,4 +177,283 @@ console.log(sortName)
         })
         console.log(popul) */
 
+
+/* let one = 1
+let two = 2
+let thre = 3
+let fhor = 4
+let getSum = (one,two,thre,fhor ) => {
+    return one + two + thre + fhor
+}
+console.log(getSum(one,two,thre,fhor )) */
+
+
+
+/* 
+let animal = {
+    name:'Semen'
+}
+let pes = {
+    name:'Anton'
+}
+let cat = Object.create(animal)
+cat.paroda = 'dvornaga'
+console.log(cat)
+console.log(animal.isPrototypeOf(pes)) */
+
+/* class Name {
+    constructor(firstname,surename){
+        this.firstname = firstname
+        this.surename = surename
+    }
+}
+let student = new Name('kurva','cech')
+console.log(student) */
+/* 
+class Rectangle{
+    constructor(width,height){
+        this.width = width,
+        this.height = height
+    }
+    getArea(){
+        return this.width * this.height
+    }
+} 
+let triangle = new Rectangle(100 , 200)
+let triangle2 = new Rectangle(8745, 8)
+console.log(triangle2.getArea())
+console.log(triangle.getArea()) */
+
+/* class Book{
+    constructor( title,  author, price ){
+        this.title = title
+        this.author = author
+        this.price = price
+    }
+}
+class Bookstore{
+    constructor(){
+        this.books = []
+    }
+    addBook(book){
+        this.books.push(book)
+    }
+    removeBook(book){
+        this.books.
+    }
+} */
+
+/* 
+class Peaple {
+    constructor(name,age){
+        this.name = name
+        this.age = age
+    }
+}
+class Person extends Peaple {
+    constructor(name,etnisiti){
+        super(name) 
+        this.etnisiti = etnisiti
+    }   
+    addciti(etnisiti){
+        this.etnisiti.push(etnisiti)
+    }
+}
+let getPerson = new Person('antosha','Ucrainish')
+console.log(getPerson.addciti('Ucrainish')) */
+
+/* 
+class Animal{
+    constructor(name){
+        this.name = name
+    }
+}
+class Dog extends Animal{
+    constructor(name,breed){
+        super(name)
+        this.breed = breed
+    }
+}
+let myDog = new Dog('Buddy',' Labrador Retriever')
+console.log(myDog) */
+
+
+/* class User {
+    constructor(name,age,followers){
+        this.name = name
+        this.age = age
+        this.followers = followers
+    }
+    getInfo(){
+        return `user ${this.name} age ${this.age} folowers ${this.followers}`
+    }
+}
+let person = new User('Antosha', 20 , 2000)
+console.log(person.getInfo()) */
+/* 
+class Storage{
+    constructor(){
+        this.items = []
+    }
+    addItem(item){
+        this.items.push(item)
+    }
+    removeItem(item){
+        this.items = this.items.filter(elem => elem !== item)
+    }
+    getItems(){
+        return this.items
+    }
+}
+const storage = new Storage([
+    'Нанітоіди',
+    'Пролонгер',
+    'Залізні жупи',
+    'Антигравітатор',
+    ]);
+    
+    const items = storage.getItems();
+    storage.addItem('Дроїд' );
+    storage.addItem('Нанітоіди')
+    console.table(storage.items); 
+
+     */
+
+/*     let titleName = document.createElement('h2')
+    titleName.textContent = 'Привіт, це перший мій створений елемент!' 
+    titleName.className = 'title'
+    
+    console.log(titleName)
+    document.body.append(titleName) */
+/* 
+    const colorPickerOptions = [
+        { label: 'red', color: '#F44336' },
+        { label: 'green', color: '#4CAF50' },
+        { label: 'blue', color: '#2196F3' },
+        { label: 'grey', color: '#607D8B' },
+        { label: 'pink', color: '#E91E63' },
+        { label: 'indigo', color: '#3F51B5' },
+        ];
+
+        let dev = document.querySelector('.js-color-picker')
+        for(let i = 0; i < colorPickerOptions.length; i++){
+            let button__1 = document.createElement('button')
+            button__1.textContent = colorPickerOptions[i].label
+            button__1.style.backgroundColor = colorPickerOptions[i].color
+            dev.appendChild(button__1)
+        }
+ */
+        /* let porodyct = document.querySelector('.js-products') запуск самого прототипа 
+        let cartochka = function(title,info,price){  запуск функції cartochka с аргументами title, info, price
+            let cartCon = document.createElement('article') запуск контейнера 
+            cartCon.className = 'cart' додавання класу 
+            let cartTitle = document.createElement('h2')запуск заголовка - назви магазина 
+            cartTitle.className = 'cart__title' додавання класу 
+            cartTitle.textContent = title  даємо значення аргумента  
+            let cartInfo = document.createElement('p') запуск інформації про картку 
+            cartInfo.className = 'cart__info' додавання класу 
+            cartInfo.textContent = info  даємо значення аргумента  
+            let cartPrice = document.createElement('p') запуск ціни картки 
+            cartPrice.className = 'cart__price' додавання класу 
+            cartPrice.textContent = price даємо значення аргумента  
+            cartCon.appendChild(cartTitle) створення цієї зміної в контейнері 
+            cartCon.appendChild(cartInfo) створення цієї зміної в контейнері 
+            cartCon.appendChild(cartPrice) створення цієї зміної в контейнері 
+            return cartCon  повернення контейнера 
+        }
+        
+        let choto = cartochka('Silpo','це магазин Сільпо тут могла бути ваша реклама',74)  запуск зміної яка дорівнює функції 
+        porodyct.appendChild(choto)/* додавоння картки 
+        let chotoTwo = cartochka('ATB','це магазин АТБ тут могла бути ваша реклама',100) запуск зміної яка дорівнює функції 
+        porodyct.appendChild(chotoTwo) додавоння картки 
+        let chtotothree = cartochka('Zym', 'це магазин Цум тут могла бути ваша реклама',65) запуск зміної яка дорівнює функції 
+        porodyct.appendChild(chtotothree) додавоння картки  */
+
+/*         let images = ['https://images.pexels.com/photos/16053278/pexels-photo-16053278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 
+            'https://images.pexels.com/photos/13733057/pexels-photo-13733057.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',    
+            'https://images.pexels.com/photos/15851469/pexels-photo-15851469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' 
+            ]
+
+
+            let gallery = document.getElementById('gallery')
+            let imggallery = function(img){
+                let con = document.createElement('li')
+                con.className = 'con'
+                let photo = images.forEach(elem => elem === img){
+                }   
+                con.appendChild(' photo')
+            }
+         */
+
+/*             let ingredients = [
+                'Картопля',
+                'Гриби',
+                'Часник',
+                'Помідори',
+                'Зелень',
+                'Приправи',
+                ];
+                ingredients.forEach(ingredient => {
+                    let li = document.createElement('li');
+                    li.textContent = ingredient;
+                    ingredientsList.appendChild(li);} */
+
+
+
+
+                    let images = [
+                        {
+                        url:
+                        'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+                        alt: 'White and Black Long Fur Cat',
+                        },
+                        {
+                        url:
+                        'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+                        alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
+                        },
+                        {
+                        url:
+                        'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+                        alt: 'Group of Horses Running',
+                        },
+                    ];
+
+
+
+let gallery = document.getElementById('gallery')
+
+for(let i = 0; i < images.length; i++){
+    let createImg = document.createElement('img')
+    createImg.src = images[i].url
+    gallery.appendChild(createImg)
+}
+
+
+/* function imgGallery(li,img){
+    let liCreator = document.createElement('li')
+    let imgCreator = document.createElement('img')
+    images.forEach()
+    liCreator.appendChild(imgCreator)
+    
+} */
+/* 
+    let countvalue = 0
+
+let spanValue = document.getElementById('value')
+let plasBtn = document.querySelector('.plas')
+let minusBtn = document.querySelector('.minus')
+function plas(){
+countvalue += 1
+updateCount()
+}
+function minus(){
+countvalue -= 1
+updateCount()
+}
+function updateCount(){
+spanValue.textContent = countvalue
+}
+plasBtn.addEventListener('click', plas)
+minusBtn.addEventListener('click',minus) */
 
